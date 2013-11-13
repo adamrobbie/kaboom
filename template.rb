@@ -132,7 +132,7 @@ inject_into_file "app/controllers/application_controller.rb", after: "protect_fr
 end
 
 # CanCan
-generate cancan:ability
+run 'rails g cancan:ability'
 # Minitest
 generate mini_test:install
 
